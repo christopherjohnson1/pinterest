@@ -1,0 +1,27 @@
+{
+  "board1" : {
+    "name": "Garage",
+    "description": "Garage Ideas",
+    "uid": "H1r63OXkAdUpPiNNddUqDocin2m1"
+  },
+  "board2" : {
+    "name": "Woodworking",
+    "description": "Woodworking project ideas",
+    "uid": "H1r63OXkAdUpPiNNddUqDocin2m1"
+  },
+  "board3" : {
+    "name": "Recipes",
+    "description": "Meals I want to cook",
+    "uid": "H1r63OXkAdUpPiNNddUqDocin2m1"
+  },
+  "board4" : {
+    "name": "Weapons",
+    "description": "Various weapons I want to buy",
+    "uid": "8675309"
+  },
+  "board5" : {
+    "name": "Art",
+    "description": "Inspiration for different art ideas",
+    "uid": "123456"
+  }
+}
