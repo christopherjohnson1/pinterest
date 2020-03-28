@@ -1,4 +1,12 @@
+import firebase from 'firebase/app';
+import apiKeys from './helpers/apiKeys.json';
 import 'bootstrap';
 import '../styles/main.scss';
+import auth from './components/auth/auth';
 
-console.error('java works');
+const init = () => {
+  firebase.initializeApp(apiKeys.firebaseKeys);
+  auth.loginButton();
+};
+
+init();
