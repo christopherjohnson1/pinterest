@@ -17,6 +17,8 @@ const checkLoginStatus = () => {
       logoutButton.removeClass('hide');
       pinterestHeading.addClass('hide');
       boardsHeading.removeClass('hide');
+      boards.buildBoards();
+      boards.boardsHeader();
     } else {
       authDiv.removeClass('hide');
       pinterestDiv.addClass('hide');
@@ -24,7 +26,6 @@ const checkLoginStatus = () => {
       pinterestHeading.removeClass('hide');
       boardsHeading.addClass('hide');
       home.pinterestHeader();
-      boards.boardsHeader();
     }
   });
 };
