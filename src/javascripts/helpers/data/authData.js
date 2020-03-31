@@ -8,6 +8,7 @@ const pinterestDiv = $('#pinterest');
 const logoutButton = $('#navbar-logout-button');
 const pinterestHeading = $('#show-me-the-pinterest');
 const boardsHeading = $('#pinterest-boards');
+const singleBoard = $('#single-board');
 
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
@@ -17,6 +18,7 @@ const checkLoginStatus = () => {
       logoutButton.removeClass('hide');
       pinterestHeading.addClass('hide');
       boardsHeading.removeClass('hide');
+      singleBoard.removeClass('hide');
       boards.buildBoards();
       boards.boardsHeader();
     } else {
@@ -25,6 +27,7 @@ const checkLoginStatus = () => {
       logoutButton.addClass('hide');
       pinterestHeading.removeClass('hide');
       boardsHeading.addClass('hide');
+      singleBoard.addClass('hide');
       home.pinterestHeader();
     }
   });
