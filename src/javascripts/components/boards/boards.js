@@ -1,3 +1,6 @@
+import firebase from 'firebase/app';
+import 'firebase/auth';
+
 import utils from '../../helpers/utils';
 import boardData from '../../helpers/data/boardData';
 import boardMaker from '../boardMaker/boardMaker';
@@ -8,7 +11,8 @@ const boardsHeader = () => {
 };
 
 const buildBoards = () => {
-  boardData.getBoards()
+  const myUid = firebase.auth().currentUser.uid;
+  boardData.getBoards(myUid)
     .then((boards) => {
       let domString = '';
       domString += '<div class="d-flex flex-wrap">';
