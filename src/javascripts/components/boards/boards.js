@@ -7,7 +7,7 @@ import boardMaker from '../boardMaker/boardMaker';
 
 const boardsHeader = () => {
   const domString = '<h1 class="text-center mt-3">Boards</h1>';
-  utils.printToDom('pinterest-boards', domString);
+  utils.printToDom('pinterest-boards-heading', domString);
 };
 
 const buildBoards = () => {

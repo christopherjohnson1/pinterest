@@ -12,7 +12,6 @@
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item active">
@@ -24,11 +23,21 @@
 <!-- navbar end  -->
 
 <!-- divs to display start  -->
+<div id="show-me-the-pinterest" class="hide"></div> <!-- this div only displays Pinterest when no user-->
 <div id="auth"></div>
-<div id="show-me-the-pinterest" class="hide"></div>
-<div id="pinterest-boards"></div>
+<div id="pinterest-boards-heading"></div>
+
+<div class="row">
+  <div class="col-md-6">
 <div id="pinterest" class="hide"></div>
-<div id="single-board">I see pins?</div>
+  </div>
+  <div class="col-md-6">
+    <div id="single-board">I see pins?</div>
+  </div>
+</div>
+
+
+
 <!-- divs to display end  -->
   
 </body>
