@@ -1,36 +1,27 @@
 import firebase from 'firebase/app';
 import 'firebase/auth';
-import home from '../../components/home/home';
-import boards from '../../components/boards/boards';
-import singleView from '../../components/singleView/singleView';
+import boardsComp from '../../components/boards/boards';
 
+// ASSIGN DIV ID'S TO VARIABLES FOR ADDING AND REMOVING CLASSES
 const authDiv = $('#auth');
-const pinterestDiv = $('#pinterest');
-const logoutButton = $('#navbar-logout-button');
-const pinterestHeading = $('#show-me-the-pinterest');
-const boardsHeading = $('#pinterest-boards-heading');
-const singleBoard = $('#single-board');
+const homeDiv = $('#home');
+const boardsDiv = $('#boards');
+const logoutButton = $('#logout-btn');
 
+// ADD OR REMOVE THE 'HIDE' CLASS OF DIVS, BASED ON USER LOGGED IN OR OUT
 const checkLoginStatus = () => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       authDiv.addClass('hide');
-      pinterestDiv.removeClass('hide');
+      homeDiv.addClass('hide');
+      boardsDiv.removeClass('hide');
       logoutButton.removeClass('hide');
-      pinterestHeading.addClass('hide');
-      boardsHeading.removeClass('hide');
-      singleBoard.removeClass('hide');
-      boards.buildBoards();
-      boards.boardsHeader();
-      singleView.singleBoardView();
+      boardsComp.boardBuilder();
     } else {
       authDiv.removeClass('hide');
-      pinterestDiv.addClass('hide');
+      homeDiv.removeClass('hide');
+      boardsDiv.addClass('hide');
       logoutButton.addClass('hide');
-      pinterestHeading.removeClass('hide');
-      boardsHeading.addClass('hide');
-      singleBoard.addClass('hide');
-      home.pinterestHeader();
     }
   });
 };

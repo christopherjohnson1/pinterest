@@ -1,45 +1,56 @@
 {
   "pin1" : {
+    "name": "Ceiling Storage",
     "imageUrl": "https://s3-production.bobvila.com/slides/17393/widened/ceiling_storage.jpg?1501001556",
     "boardId": "board1"
   },
   "pin2" : {
+    "name": "Organized Garage",
     "imageUrl": "https://149350288.v2.pressablecdn.com/wp-content/uploads/2018/10/garage-reveal.jpg",
     "boardId": "board1"
   },
   "pin3" : {
+    "name": "Fancy Garage Yo!",
     "imageUrl": "https://nextluxury.com/wp-content/uploads/garage-wall-ideas.jpg",
     "boardId": "board1"
   },
   "pin4" : {
+    "name": "Laptop Stand",
     "imageUrl": "https://www.thesprucecrafts.com/thmb/A9jfNqHWwL3dwMCsyTMw8oEict4=/900x600/filters:no_upscale()/13_lapdesk-5c100820c9e77c0001f53c0e.jpg",
     "boardId": "board2"
   },
   "pin5" : {
+    "name": "Coasters",
     "imageUrl": "https://i.ytimg.com/vi/mHxOaLonJmo/maxresdefault.jpg",
     "boardId": "board2"
   },
   "pin6" : {
+    "name": "Phone and Watch Holder",
     "imageUrl": "https://wooddad.com/wp-content/uploads/2019/05/wooden-mobile-holder-2.png",
     "boardId": "board2"
   },
   "pin7" : {
+    "name": "Chili and Tacos",
     "imageUrl": "https://www.simplyrecipes.com/wp-content/uploads/2020/03/Recipes-for-Keeping-Healthy-LEAD-768x513.jpg",
     "boardId": "board3"
   },
   "pin8" : {
+    "name": "Tortellini Soup",
     "imageUrl": "https://s23209.pcdn.co/wp-content/uploads/2019/01/Creamy-Tortellini-SoupIMG_8157.jpg",
     "boardId": "board3"
   },
   "pin9" : {
+    "name": "Tasty Pasta",
     "imageUrl": "https://www.bbcgoodfood.com/sites/default/files/recipe-collections/collection-image/2013/05/caponata-pasta_1.jpg",
     "boardId": "board3"
   },
   "pin10" : {
+    "name": "Sig Rattler",
     "imageUrl": "https://files.osgnetworks.tv/2/files/2018/06/SIG-Sauer-MCX-Rattler-Feature.jpg",
     "boardId": "board4"
   },
   "pin11" : {
+    "name": "Abstract Art Idea",
     "imageUrl": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/energized--abstract-art-by-fidostudio-tom-fedro--fidostudio.jpg",
     "boardId": "board5"
   }
